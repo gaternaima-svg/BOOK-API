@@ -11,3 +11,11 @@ def books():
             {"id":2,"title":"FastAPI"}
         ]
     }
+@app.get("/authors")
+def authors():
+    return {
+        "authors": [
+            {"id": 1,"name":"Guido van Rossum"},
+            {"id":2,"name":"Sebastien Ramirez"}
+        ]
+    }
